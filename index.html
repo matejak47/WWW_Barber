@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/CSS/Main.css">
+    <link rel="stylesheet" href="/CSS/Footer_Header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
+    <script src="/JS/scroll.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+    const burger = document.querySelector('.burger');
+    const navbar = document.querySelector('.navbar');
+  
+    burger.addEventListener('click', () => {
+        navbar.classList.toggle('active');
+    });
+  });
+    </script>
+
+    <main>
+        
+        <section class="hero">
+            <header class="navbar">
+                <nav>
+                    
+                    <ul class="nav-links">
+                        <li><a href="#" onclick="scrollDownToCenik();">Ceník</a></li>
+                        <li><a href="https://blessed-barbershop.reservio.com/">Rezervace</a></li>
+                        <li><a href="#" onclick="scrollDownToInfo();">O nás</a></li>
+                        <li><a href="#" onclick="scrollDownToForm();">Holiči</a></li>
+                       
+                    </ul>
+                </nav>
+                <div class="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </header>
+            <div class="logo"><img src="/Fig/logo2.png" alt="logo"></div>
+            <div class = "zadek">
+               
+                 <h1>BLESSED BARBERSHOP</h1>
+                <a href="https://blessed-barbershop.reservio.com/" class="cta-btn" target="_blank"> -- Rezervace -- </a>
+            </div>
+        </section>
+
+        <div class="kdo" id="info">
+            <article class="kdo-item">
+
+                    <h2>O nás</h2>
+                    <p>Nehrajeme si na klub vyvolených.<br> Péči u nás dostane každý, kdo si o ní řekne. Nabídneme ti tak posezení, občerstvení a kompletní servis barbershopu.</p>
+                    <div class="igtik">
+                        <a href="https://www.instagram.com/blessedbarbershop_official/" target="_blank" class="instagram-icon"><img src="/Fig/iggold.png" alt="instagram blessed barbershop"></a>
+                        <a href="https://www.facebook.com/BlessedBarbershop.official" target="_blank" class="tiktok-icon"><img src="/Fig/fbgold.png" alt="Facebook blesseedbarbershop"></a>
+                    </div>
+                </p>
+                
+            </article>
+            <div class="kdo-item"><img src="/Fig/img1.jpg" alt="Cut"></div>
+            
+
+        </div>
+
+        <div class="cenik" id="sluzby">
+            <h1 class="hstyle">Vlasy</h1>
+            <div class="sluzba">
+                <div class="sluzba-content">
+                    <span class="nazev-sluzby">STŘIH (30-45min)</span>
+                    <a href="https://blessed-barbershop.reservio.com/services/681a7caa-0cb6-4687-8846-896893add022" target="_blank" class="popis-sluzby">Zobrazit podrobnosti &gt;</a>
+                </div>
+                <span class="tecky"></span>
+                <span class="cena">390&nbsp;Kč</span>
+                <button class="rezervace-btn" onclick="window.open('https://blessed-barbershop.reservio.com/booking?step=1&serviceId=681a7caa-0cb6-4687-8846-896893add022', '_blank')">Rezervovat</button>
+            </div>
+        
+            <div class="sluzba">
+                <div class="sluzba-content">
+                    <span class="nazev-sluzby">STŘIH STROJKEM (30min)</span>
+                    <a href="https://blessed-barbershop.reservio.com/services/62028a2b-30af-4bc0-ab73-cef89d6ccf9e" target="_blank" class="popis-sluzby">Zobrazit podrobnosti &gt;</a>
+                </div>
+                <span class="tecky"></span>
+                <span class="cena">490&nbsp;Kč</span>
+                <button class="rezervace-btn" onclick="window.open('https://blessed-barbershop.reservio.com/booking?step=1&serviceId=62028a2b-30af-4bc0-ab73-cef89d6ccf9e', '_blank')">Rezervovat</button>
+            </div>
+        
+            <div class="sluzba">
+                <div class="sluzba-content">
+                    <span class="nazev-sluzby">STŘIH DLOUHÝCH VLASŮ (60min)</span>
+                    <a href="https://blessed-barbershop.reservio.com/services/52cda863-14cd-4418-8fa1-6b1c8cc223c6" target="_blank" class="popis-sluzby">Zobrazit podrobnosti &gt;</a>
+                </div>
+                <span class="tecky"></span>
+                <span class="cena">590&nbsp;Kč</span>
+                <button class="rezervace-btn" onclick="window.open('https://blessed-barbershop.reservio.com/booking?step=1&serviceId=52cda863-14cd-4418-8fa1-6b1c8cc223c6', '_blank')">Rezervovat</button>
+            </div>
+        
+            <div class="sluzba">
+                <div class="sluzba-content">
+                    <span class="nazev-sluzby">STŘIH STUDENTSKÝ / DĚTSKÝ (30-45min)</span>
+                    <a href="https://blessed-barbershop.reservio.com/services/c17182d3-892f-4967-8010-5b5a33a10219" target="_blank" class="popis-sluzby">Zobrazit podrobnosti &gt;</a>
+                </div>
+                <span class="tecky"></span>
+                <span class="cena">390&nbsp;Kč</span>
+                <button class="rezervace-btn" onclick="window.open('https://blessed-barbershop.reservio.com/booking?step=1&serviceId=c17182d3-892f-4967-8010-5b5a33a10219', '_blank')">Rezervovat</button>
+            </div>
+        </div>
+        
+        <div class="cenik">
+            <h1 class="hstyle">Vousy</h1>
+            <div class="sluzba">
+                <div class="sluzba-content">
+                    <span class="nazev-sluzby">ÚPRAVA VOUSŮ (30min)</span>
+                    <a href="https://blessed-barbershop.reservio.com/services/2e5f2c2e-7c7b-4365-9d17-03cbce48f150" target="_blank" class="popis-sluzby">Zobrazit podrobnosti &gt;</a>
+                </div>
+                <span class="tecky"></span>
+                <span class="cena">390&nbsp;Kč</span>
+                <button class="rezervace-btn" onclick="window.open('https://blessed-barbershop.reservio.com/booking?step=1&serviceId=2e5f2c2e-7c7b-4365-9d17-03cbce48f150', '_blank')">Rezervovat</button>
+            </div>
+        
+            <div class="sluzba">
+                <div class="sluzba-content">
+                    <span class="nazev-sluzby">TRADIČNÍ HOLENÍ (30-45min)</span>
+                    <a href="https://blessed-barbershop.reservio.com/services/85dd9ae5-0e98-40cc-aac1-d3db7270d1b6" target="_blank" class="popis-sluzby">Zobrazit podrobnosti &gt;</a>
+                </div>
+                <span class="tecky"></span>
+                <span class="cena">490&nbsp;Kč</span>
+                <button class="rezervace-btn" onclick="window.open('https://blessed-barbershop.reservio.com/booking?step=1&serviceId=85dd9ae5-0e98-40cc-aac1-d3db7270d1b6', '_blank')">Rezervovat</button>
+            </div>
+        </div>
+        
+        <div class="cenik">
+            <h1 class="hstyle">Komplety</h1>
+            <div class="sluzba">
+                <div class="sluzba-content">
+                    <span class="nazev-sluzby">STŘIH + ÚPRAVA VOUSŮ (45-60min)</span>
+                    <a href="https://blessed-barbershop.reservio.com/services/42ed26a3-f9a4-441a-b212-749f7cf2966e" target="_blank" class="popis-sluzby">Zobrazit podrobnosti &gt;</a>
+                </div>
+                <span class="tecky"></span>
+                <span class="cena">690&nbsp;Kč</span>
+                <button class="rezervace-btn" onclick="window.open('https://blessed-barbershop.reservio.com/booking?step=1&serviceId=42ed26a3-f9a4-441a-b212-749f7cf2966e', '_blank')">Rezervovat</button>
+            </div>
+        
+            <div class="sluzba">
+                <div class="sluzba-content">
+                    <span class="nazev-sluzby">BLESSED FULL SERVICE (60-75min)</span>
+                    <a href="https://blessed-barbershop.reservio.com/services/c3307bfc-175d-4fe9-9d16-4efc02510086" target="_blank" class="popis-sluzby">Zobrazit podrobnosti &gt;</a>
+                </div>
+                <span class="tecky"></span>
+                <span class="cena">890&nbsp;Kč</span>
+                <button class="rezervace-btn" onclick="window.open('https://blessed-barbershop.reservio.com/booking?step=1&serviceId=c3307bfc-175d-4fe9-9d16-4efc02510086', '_blank')">Rezervovat</button>
+            </div>
+        </div>
+        
+        
+
+  
+   <h2 class="holici" id="formSection">Naši holiči</h2>
+        <section class="grid-container">
+            <div class="grid-item">
+                <img src="/Fig/xd.jpg" alt="Image 1">
+                <button class="img-btn"><a href="https://blessed-barbershop.reservio.com/staff/68ab0a9e-20f5-47b9-b13e-6d4e8e483095" target="_blank">Kony Master Barber</a></button>
+            </div>
+            <div class="grid-item">
+                <img src="/Fig/Bez názvu.png" alt="Image 2">
+                <button class="img-btn"><a href="https://blessed-barbershop.reservio.com/staff/1f7a34b2-e843-45e4-9da5-13b30034c8dc" target="_blank">Luccas Barber</a></button>
+            </div>
+            <div class="grid-item">
+                <img src="/Fig/xd.jpg" alt="Image 3">
+                <button class="img-btn"><a href="https://blessed-barbershop.reservio.com/staff/fe722ed8-00c9-4676-9e3a-b6847c1744e5">Miloš Barber</a></button>
+            </div>
+        </section>
+
+
+        <section class="grid-container2">
+            <div class="grid-item2">
+                <img src="/Fig/xd.jpg" alt="Image 4">
+                <button class="img-btn"><a href="https://blessed-barbershop.reservio.com/staff/2f1e5449-b3f0-4738-b15c-2caa69c8d935">Oleg Barber</a></button>
+            </div>
+            <div class="grid-item2">
+                <img src="/Fig/otaznik.png" alt="Image 5">
+                <button class="img-btn"><a href="https://www.instagram.com/lucass__barber/">Hledáme</a></button>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="feature">
+                <h2>Kontakt</h2>
+                <a href="tel:+420607540315">
+                  <i class="fas fa-phone"></i> +420 607 540 315
+                </a>
+                <br><br>
+                <a href="mailto:blessedbarbershop@email.cz">
+                  <i class="fas fa-envelope"></i> blessedbarbershop@email.cz
+                </a>
+              </div>
+            <div class="feature">
+                <h2>Kde nás najdete</h2>
+
+                <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12002.212636077233!2d15.052277562922825!3d50.77271142163934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470937fe4c00fc4f%3A0xac38a02895f250b9!2sBlessed%20Barbershop!5e0!3m2!1scs!2scz!4v1725960532832!5m2!1scs!2scz" width="300" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+            </div>
+            <div class="feature">
+                <h2 style="margin-bottom: 25px;">Otevírací doba</h2>
+                <p>PO &nbsp;&nbsp;&nbsp; 09:00-19:00<br> ÚT &nbsp;&nbsp;&nbsp; 09:00-19:00 <br>ST &nbsp;&nbsp;&nbsp; 09:00-18:00 <br>ČT &nbsp;&nbsp;&nbsp; 09:00-19:00 <br> PÁ &nbsp;&nbsp;&nbsp; 09:00-19:00</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Matěj Jiránek.</p>
+    </footer>
+</body>
+</html>

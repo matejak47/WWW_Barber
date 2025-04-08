@@ -1,0 +1,450 @@
+:root {
+    --goldies: #C5B358; /* Definice proměnné s názvem "zadek" */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', serif;
+}
+.burger {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.burger span {
+  height: 3px;
+  background-color: white;
+  width: 100%;
+  border-radius: 5px;
+}
+body {
+    background-color: rgb(32, 29, 29);
+    color: var(--goldies);
+    line-height: 1.6;
+}
+
+header {
+    padding: 20px;
+    padding-right: 0px;
+    width: 100%; /* Šířka 100% pro pokrytí celé šířky stránky */
+}
+
+nav {
+    display: flex; /* Aktivace Flexboxu pro navigaci */
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.logo {
+    margin-top: 1rem;
+}
+
+.logo img {
+    width: 15rem; /* Nastavte šířku obrázku na 100% */
+    height: auto;
+    object-fit: contain;
+    background-color: #000;
+    border: 0.3rem solid black;
+    border-radius: 1rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    background-color: #00000083;
+}
+
+.nav-links li {
+    display: inline;
+    margin-left: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 0.4rem;
+}
+
+.nav-links a {
+    color: var(--goldies);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-family: "Teko", sans-serif;
+    font-size: 2rem;
+}
+
+.nav-links a:hover {
+    color: white;
+}
+
+.hero {
+    height: 100vh;
+    background-color: #111;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    background-image: url(/Fig/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.zadek {
+    margin-bottom: 20rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    padding: 1rem; /* Zjednodušení */
+    background-color: #000;
+    border-radius: 0.5rem;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+    padding: 1rem; /* Zjednodušení */
+    background-color: #000;
+    border-radius: 0.5rem;
+}
+
+.hero a {
+    font-size: 2.5rem;
+}
+
+.cta-btn {
+    padding: 0.3rem 1rem; /* Zjednodušení */
+    background-image: url(/Fig/gol.avif);
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 0.3rem;
+    transition: filter 0.5s, color 0.5s;
+}
+
+.cta-btn:hover {
+    background-image: url(/Fig/gol.avif);
+    filter: brightness(70%);
+}
+
+.features {
+    border-top: 0.3rem solid var(--goldies);
+    display: flex;
+    justify-content: space-around;
+    padding: 5px 20px;
+    background-color: #222;
+}
+
+.feature {
+    text-align: center;
+    width: 30%;
+}
+
+.feature h2 {
+    margin-bottom: 15px;
+    color: var(--goldies);
+}
+
+.feature p {
+    color: #ddd;
+}
+
+.feature a {
+    text-decoration: none; /* Odstraní podtržení odkazu */
+    color: white; /* Umožní odkazu mít stejnou barvu jako okolní text */
+}
+
+.feature a i {
+    margin-right: 8px; /* Vzdálenost mezi ikonou a textem */
+}
+
+.mapouter {
+    display: flex;
+    justify-content: center; /* Vystředění mapy */
+    padding: 10px 0; /* Volitelně: přidání paddingu kolem mapy */
+    width: 100%; /* Zajišťuje, že mapa se rozšiřuje na šířku svého kontejneru */
+}
+
+.kdo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 60rem;
+    margin-top: 2rem;
+    border-top: 0.3rem solid var(--goldies);
+    border-bottom: 0.3rem solid var(--goldies);
+}
+
+.kdo-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /* Pokud chceš, aby to vyplnilo výšku */
+    padding: 0;
+}
+
+.kdo-item h2, .kdo-item p, .kdo-item .igtik {
+    margin: 0 0 1rem; /* Přidání spodního okraje pro mezery */
+}
+
+.kdo-item img {
+    width: 100%;
+    height: auto; /* Zajistí zachování původního poměru stran obrázku */
+    display: block;
+    border-radius: 1rem;
+    box-shadow: 0.5rem 0.5rem 1rem black;
+}
+
+.kdo-item h2 {
+    font-weight: bold;
+    text-align: left;
+    font-family: 'Times New Roman', serif;
+    font-size: 2rem;
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+.kdo-item p {
+    margin: 0;
+    margin-bottom: 1rem;
+    font-family: 'Times New Roman', serif;
+    font-size: 1.5rem;
+    text-align: left;
+    line-height: 1.5;
+}
+
+.igtik {
+    display: flex;
+    flex-direction: row;
+}
+
+.igtik img {
+    max-width: 3rem;
+    margin-right: 1rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.igtik .instagram-icon:hover img,
+.igtik .tiktok-icon:hover img {
+    transform: scale(1.1);
+}
+
+.burger {
+  display: flex; /* Zobraz burger menu */
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  cursor: pointer;
+  margin-left: 1rem; /* Trocha prostoru vlevo */
+}
+
+.burger span {
+  height: 3px;
+  background-color: var(--goldies); /* Použití proměnné pro barvu */
+  width: 100%;
+  border-radius: 5px;
+  transition: all 0.3s ease; /* Plynulý přechod pro animaci */
+}
+
+
+
+@media (max-width: 768px) {
+  .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 10px;
+      text-align: center;
+  }
+
+  .navbar a {
+      display: none; /* Skryj odkazy */
+      margin: 10px 0;
+      font-size: 18px;
+  }
+
+  .navbar.active a {
+      display: block;
+
+
+  }
+
+  .burger {
+      display: flex; /* Zobraz burger menu */
+  }
+
+  .hero {
+      background-size: cover;
+      padding: 20px;
+  }
+
+  .logo img {
+      max-width: 100px;
+  }
+
+  .phone-link {
+      font-size: 14px;
+      padding: 1rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
+  }
+
+  .firma {
+      font-size: 1.5rem;
+      padding: 1rem;
+  }
+
+  .grid-container {
+      grid-template-columns: 1fr;
+      padding: 10px;
+  }
+
+  .image-box img {
+      width: 100%;
+      height: auto;
+  }
+
+  .grid-wrapper {
+      grid-template-columns: 1fr;
+      max-width: 100%;
+      margin: 20px auto;
+      padding: 10px;
+  }
+
+  .carousel img {
+      width: 100%;
+  }
+
+  .contact-right form {
+      max-width: 100%;
+      padding: 10px;
+  }
+
+  .features {
+      flex-direction: column;
+      padding: 10px;
+  }
+
+  .feature {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+
+  .feature h2 {
+      font-size: 1.5rem;
+  }
+
+  .feature p {
+      font-size: 1rem;
+  }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .nav-links {
+      flex-direction: column; /* Změna orientace odkazu na sloupec pro mobil */
+      align-items: flex-start; /* Zarovnání odkazu vlevo */
+      background-color: none;
+  }
+  
+  .nav-links li {
+      margin: 0.5rem 0; /* Mezera mezi odkazy */
+  }
+
+  
+  .hero {
+      height: auto; /* Upraví výšku na automatickou */
+      padding: 10px; /* Snížení paddingu */
+  }
+
+  .hero h1 {
+      font-size: 1.5rem; /* Zmenšení nadpisu */
+  }
+
+  .hero p {
+      font-size: 1.1rem; /* Zmenšení textu */
+  }
+
+  .hero a {
+    font-size: 1.8rem;
+}
+
+  .cta-btn {
+      font-size: 1.8rem; /* Zmenšení velikosti tlačítka */
+  }
+
+  .features {
+      flex-direction: column; /* Změna na sloupec */
+      align-items: center; /* Centrování */
+  }
+
+  .feature {
+      width: 100%; /* Zajištění, že funkce zabírá celou šířku */
+      margin-bottom: 20px; /* Mezera mezi funkcemi */
+  }
+
+  .kdo {
+      grid-template-columns: 1fr; /* Sloučení do jednoho sloupce */
+      padding: 10px; /* Zmenšení paddingu */
+  }
+
+  .kdo-item h2 {
+      font-size: 1.8rem; /* Zmenšení velikosti nadpisu */
+  }
+
+  .kdo-item p {
+      font-size: 1.2rem; /* Zmenšení velikosti textu */
+  }
+  
+    .burger {
+        display: flex; /* Zobraz burger menu */
+    }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+      position: static;
+      top: 0;
+      width: 100%;
+      padding: 10px 0; /* Zmenšeno na vertikální padding */
+      text-align: right; /* Zarovnání obsahu doprava */
+      display: flex; /* Přidáno pro flexbox */
+      justify-content: space-between; /* Rozdělit prostor mezi prvky */
+      align-items: center; /* Vertikální zarovnání */
+  }
+
+  .nav-links {
+      display: none; /* Skryj odkazy pro mobil */
+  }
+
+  .navbar.active .nav-links {
+      display: flex; /* Zobraz odkazy při aktivaci */
+      flex-direction: column; /* Změna orientace odkazu na sloupec pro mobil */
+      align-items: flex-start; /* Zarovnání odkazu vlevo */
+      margin-top: 10px; /* Mezera nad odkazy */
+      padding: 10px; /* Padding kolem odkazů */
+      border-radius: 5px; /* Zaoblení rohů */
+  }
+
+  .burger {
+      display: flex; /* Zobraz burger menu */
+      margin-right: 20px; /* Prostor vpravo */
+  }
+
+  .burger span {
+      background-color: var(--goldies); /* Použití proměnné pro barvu */
+  }
+}
+
+

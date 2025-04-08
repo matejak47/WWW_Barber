@@ -1,0 +1,282 @@
+:root {
+    --goldies: #d7a640; /* Definice proměnné s názvem "zadek" */
+}
+
+
+
+
+.grid-container {
+  border-top: 0.3rem solid var(--goldies);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Tři sloupce na prvním řádku */
+  gap: 20px;
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto; /* Tím se zajistí, že grid bude vystředěn */
+  margin-bottom: 50px; /* Přidání mezery pod sekci */
+  margin-top: 0px;
+  padding-top: 30px;
+}
+
+.grid-item {
+  position: relative; /* Umožňuje absolutní pozicování tlačítka */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.grid-item img {
+  width: 20rem; /* Pevná šířka obrázku */
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover; /* Zachová poměr stran obrázku */
+  box-shadow: 0.5rem 0.5rem 1rem black;
+}
+
+.grid-item button.img-btn  {
+  position: absolute;
+  bottom: 10px;
+  left: 45px;
+  padding: 10px 20px;
+  background-color: var(--goldies);
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+
+.grid-item button.img-btn:hover {
+  background-image: url(/Fig/sil.jpg);
+  color: white;
+}
+
+.grid-container2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Dva sloupce na druhém řádku */
+  gap: 50px;
+  width: 40%;
+  max-width: 1200px;
+  margin: 0 auto; /* Tím se zajistí, že grid bude vystředěn */
+  margin-bottom: 50px; /* Přidání mezery pod sekci */
+}
+
+.grid-item2 {
+  position: relative; /* Umožňuje absolutní pozicování tlačítka */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-item2 img {
+  width: 20rem; /* Pevná šířka obrázku */
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover; /* Zachová poměr stran obrázku */
+  box-shadow: 0.5rem 0.5rem 1rem black;
+}
+
+.grid-item2 button.img-btn {
+  position: absolute;
+  bottom: 10px;
+  left: 35px;
+  padding: 10px 20px;
+  background-color: var(--goldies);
+  
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  
+}
+
+.grid-item2 button.img-btn:hover {
+
+  background-image: url(/Fig/sil.jpg);
+  color: white;
+}
+
+
+.grid-item button.img-btn a,
+.grid-item2 button.img-btn a {
+  text-decoration: none; /* Odstranění podtržení odkazu */
+  color: black; /* Nastavení barvy textu na černou */
+  display: block; /* Ujistíme se, že odkaz vyplní celé tlačítko */
+  text-align: center; /* Vycentrování textu v tlačítku */
+  font-weight: 700;
+  
+}
+
+.cenik {
+  background-color: #352c2c;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 50rem;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+.hstyle {
+  text-align: center;
+  font-weight: 700;
+  font-family: "Teko", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 2rem;
+  border-bottom: 0.3rem solid var(--goldies);
+   /* Zarovnání nadpisu na střed */
+}
+
+.sluzba {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.sluzba:last-child {
+  border-bottom: none;
+}
+
+.sluzba-content {
+  display: flex;
+  flex-direction: column; /* Zajistí, že popis bude pod názvem služby */
+}
+
+.nazev-sluzby {
+  
+  font-weight: bold;
+  margin-bottom: 5px; /* Prostor mezi názvem služby a popisem */
+}
+
+.popis-sluzby {
+  color: white;
+  font-size: 12px;
+  margin-top: 0;
+  text-decoration: underline; /* Zruší podtržení odkazu */
+}
+
+.popis-sluzby:hover {
+  text-decoration: none; /* Podtrhne text při hoveru */
+}
+
+.tecky {
+  flex-grow: 1;
+  text-align: center;
+  margin: 0 10px;
+}
+
+.cena {
+  color: white;
+  margin-right: 20px;
+  font-family: "Teko", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.rezervace-btn {
+  border: none;
+  padding: 5px 10px;
+  color: #000;
+  cursor: pointer;
+  border-radius: 5px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-image 0.8s ease;
+  background-color: var(--goldies);
+  
+}
+
+.rezervace-btn:hover {
+  background-image: url(/Fig/sil.jpg);
+}
+
+.rezervace-btn a{
+text-decoration: none;
+color: #000;
+}
+.holici{
+  font-family: "Teko", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 3rem;
+  
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  margin-left: auto;
+}
+
+.burger span {
+  height: 3px;
+  background-color: white;
+  width: 100%;
+  border-radius: 5px;
+}
+
+
+/* Existing styles here */
+
+/* Additional responsive styles */
+@media (max-width: 768px) {
+  .grid-container, .grid-container2 {
+      grid-template-columns: 1fr; /* Stack items */
+      width: 90%;
+  }
+
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .cenik {
+      width: 90%; /* Responsive price list */
+  }
+
+  /* New styles for price adjustments */
+  .sluzba {
+      display: flex;
+      justify-content: space-around; /* Space out items */
+      align-items: center; /* Center items vertically */
+  }
+
+  .cena {
+      font-size: 1rem; /* Smaller price text */
+      display: flex; /* Use flexbox for price and currency */
+      align-items: center; /* Center vertically */
+      margin: 0.2rem;
+  }
+
+  .currency-symbol {
+      margin-left: 5px; /* Add space between price and currency symbol */
+      font-size: 1em; /* Adjust size of currency symbol */
+  }
+
+  .nazev-sluzby {
+      font-size: 0.8rem; /* Adjust service name size */
+  }
+
+  .rezervace-btn {
+    font-size: 0.8rem;
+    margin-left: 1rem;
+
+  }
+}
+
+
